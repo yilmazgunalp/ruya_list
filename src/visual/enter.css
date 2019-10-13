@@ -1,0 +1,113 @@
+.retne-button {
+ position: relative;
+display: flex;
+align-items: center;
+ width: 130px;
+ height: 28px;
+background: inherit;
+color: inherit;
+font: inherit;
+}
+
+.letters {
+ display: inline-block;
+ position: absolute;
+ width: 26px;
+text-transform: uppercase;
+}
+
+#E2.animate  {
+animation: 4s 1 toFirst;
+right: 0;
+}
+
+#E2{
+right: 0;
+}
+
+#N.animate  {
+animation: 4s 1 toSecond;
+right: 20%;
+}
+
+#N{
+right: 20%;
+}
+
+#T.animate  {
+animation: 4s 1 toThird;
+right: 40%;
+}
+
+#T{
+right: 40%;
+}
+
+#E.animate  {
+animation: 4s 1 toFourth;
+right: 60%;
+}
+
+#E{
+right: 60%;
+}
+
+#R.animate  {
+animation: 4s 1 toLast;
+right: 80%;
+}
+
+#R{
+right: 80%;
+}
+
+@keyframes toFirst {
+from {
+right: 0;
+}
+
+to {
+right: 80%;
+}
+
+}
+@keyframes toSecond {
+from {
+right: 20%;
+}
+
+to {
+right: 60%;
+}
+
+}
+@keyframes toThird {
+from {
+right: 40%;
+}
+
+to {
+right: 40%;
+}
+
+}
+@keyframes toFourth {
+from {
+right: 60%;
+}
+
+to {
+right: 20%;
+}
+
+}
+@keyframes toLast {
+from {
+right: 80%;
+}
+
+to {
+right: 0;
+}
+
+}

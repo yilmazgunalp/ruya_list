@@ -1,0 +1,28 @@
+.add-button {
+display: flex;
+align-items: center;
+font-size: 13px;
+}
+
+.add-title {
+background-color: #4F4646;
+color: #fff;
+padding: 12px 18px 12px 10px;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+padding: 19px 25px 18px 25px;
+}
+
+.add-logo {
+background-color: #DB0C0C;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+width: 55px;
+height: 60px;
+}

@@ -1,0 +1,20 @@
+.craze-header {
+position: absolute;
+width: 256px;
+height: 52px;
+left: 57px;
+top: 31px;
+
+font-family: 'Bungee Shade', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+color: #FFFFFF;
+
+
+}

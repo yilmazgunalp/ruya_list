@@ -1,0 +1,21 @@
+.chiper-list {
+  display: flex;
+  height: 100%;
+  padding: 0 10px;
+  background: #000;
+  
+}
+
+.chiper-list.animate {
+animation: 0.4s 4 flash;
+}
+
+@keyframes flash {
+from {
+background: #000;
+}
+
+to {
+background: #fff;
+}
+}

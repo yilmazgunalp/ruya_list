@@ -1,0 +1,30 @@
+.input-item {
+display: flex;
+align-items: center;
+font-size: 13px;
+}
+
+.input-todo {
+background-color: #850000;
+color: #fff;
+padding: 9px 18px 10px 10px;
+}
+
+.input-todo > span {
+filter: blur(2px);
+}
+
+.input-plus {
+background-color: #DB0C0C;
+font-family: 'Risque';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+width: 32px;
+height: 33px;
+}

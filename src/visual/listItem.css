@@ -1,0 +1,26 @@
+.list-item {
+display: flex;
+align-items: center;
+font-size: 13px;
+}
+
+.todo {
+background-color: #850000;
+color: #fff;
+padding: 12px 18px 12px 10px;
+}
+
+.order {
+background-color: #DB0C0C;
+font-family: 'Risque';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+width: 32px;
+height: 38px;
+}

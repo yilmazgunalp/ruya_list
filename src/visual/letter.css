@@ -1,0 +1,51 @@
+li {
+position: relative;
+height: 100%;
+width: 26px;
+background: #F30A0A;
+opacity: 0.6;
+margin: 0 5px;
+
+}
+
+hr {
+top: 50px;
+width: 26px;
+height: 3px;
+border: none;
+background: white;
+position: absolute;
+margin: 0;
+}
+
+input[type="text"]:focus + hr.blip {
+animation: 1.5s infinite blip;
+}
+
+input {
+position: absolute;
+top: 22px;
+left: 0;
+padding: 2px;
+border: none;
+width: 22px;
+height: 24px;
+font-size: 32px;
+text-align: center;
+caret-color: transparent !important;
+}
+
+input[type="text"]:focus {
+outline: none;
+border: none;
+}
+@keyframes blip {
+from {
+background: white;
+}
+
+to {
+background: black;
+}
+
+}

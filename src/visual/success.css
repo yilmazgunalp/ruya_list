@@ -1,0 +1,13 @@
+.success {
+background: #D11212;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 199px;
+min-width: 297px;
+margin-top: 53px;
+border-radius: 15px;
+color: #fff;
+font-size: 36px;
+
+}

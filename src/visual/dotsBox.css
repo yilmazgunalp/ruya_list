@@ -1,0 +1,11 @@
+.dots-box {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: transparent;
+}
+
+.dots-box > svg {
+margin: 7px 10px;
+
+}
