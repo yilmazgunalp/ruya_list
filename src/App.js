@@ -3,17 +3,17 @@ import './App.css';
 import Entrance from './visual/entrance.js'
 import ActionBox from './visual/action_box.js'
 import Enter from './visual/enter.js'
+import List from './list.js'
 import RuyaContext from './RuyaContext.js'
+import {UPDATE_ACTION, SHOW_LIST} from './Constants.js'
 
 
 const initialState = {
   actionBox: true,
   showList: false,
   actionTitle: "Welcome to Ruya's List",
-  action: () => <Enter/>
+  actionToShow: (ab_dispatch,blr) => <Enter ab_dispatch={ab_dispatch}/>
 };
-const UPDATE_ACTION = "UPDATE_ACTION";
-const SHOW_LIST = "SHOW_LIST";
 
 function reducer(state, action) {
   switch (action.type) {
@@ -21,11 +21,12 @@ function reducer(state, action) {
       return {
         actionBox: true,
         actionTitle: action.title,
-        action: action.action
+        actionToShow: action.actionToShow
       };
     case SHOW_LIST:
       return {
         actionBox: false,
+        showList: true
       };
     default:
       return initialState;
@@ -38,7 +39,8 @@ function App() {
   return (
     <RuyaContext.Provider value={{state, dispatch}}>
       <div className="App">
-    {state.actionBox && <ActionBox header={state.actionTitle} action={() => state.action()}/>}
+    {state.actionBox && <ActionBox header={state.actionTitle} action={(ab_dispatch,blr) => state.actionToShow(ab_dispatch,blr)}/>}
+    {state.showList && <List />}
       </div>
     </RuyaContext.Provider>
   );

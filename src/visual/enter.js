@@ -2,15 +2,15 @@ import React from 'react';
 import './enter.css';
 import Chiper from './chiper.js'
 import RuyaContext from '../RuyaContext.js'
-const UPDATE_ACTION = "UPDATE_ACTION";
+import {UPDATE_ACTION,SHOW_LIST} from '../Constants.js'
 
 
-function Enter() {
+function Enter({ab_dispatch}) {
   const { dispatch } = React.useContext(RuyaContext);
   const [animate, setAnimation] = React.useState('');
   const onClick = () => {
        setAnimation('animate') ;
-       setTimeout(() => dispatch({type: UPDATE_ACTION, title:"Say friend and Enter", action: () => <Chiper count="6" answer="friend"/> }), 4000) 
+       setTimeout(() => dispatch({type: UPDATE_ACTION, title:"Say friend and Enter", actionToShow: (ab_dispatch) => <Chiper count="6" answer="friend" onSuccessAction={ab_dispatch} name="friend"/> }), 4000) 
    }
 
  return (

@@ -8,9 +8,11 @@ padding-top: 116px;
 }
 
 .action-box-wrapper > h1 {
+box-sizing: border-box;
 display: flex;
 align-items: center;
-height: 52px;
+padding: 0 10px;
+max-width: 260px;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -34,3 +36,6 @@ background: #0891CB;
 border-radius: 6px;
 }
 
+.blur {
+opacity: 0.4;
+}

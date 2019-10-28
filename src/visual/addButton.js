@@ -1,7 +1,8 @@
 import React from 'react';
 import './addButton.css';
 
-function Addbutton({title}) {
+function Addbutton({title, handleClick}) {
+
   return (
     <div className="add-button">
     <div className="add-logo">
@@ -11,7 +12,7 @@ function Addbutton({title}) {
 </svg>
 
 		</div>
-    <div className="add-title">
+    <div className="add-title" onClick={handleClick}>
     {title}
     </div>
     </div>

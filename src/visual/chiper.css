@@ -7,7 +7,7 @@
 }
 
 .chiper-list.animate {
-animation: 0.4s 4 flash;
+animation: 0.3s ease-out 2 reverse flash;
 }
 
 @keyframes flash {
