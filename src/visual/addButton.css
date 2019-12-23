@@ -12,7 +12,8 @@ font-style: normal;
 font-weight: normal;
 font-size: 20px;
 line-height: 23px;
-padding: 19px 25px 18px 25px;
+padding: 19px 10px 18px 10px;
+flex-grow: 1;
 }
 
 .add-logo {

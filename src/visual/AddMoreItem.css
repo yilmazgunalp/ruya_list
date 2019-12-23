@@ -1,20 +1,20 @@
-.input-item {
+.addmore-item {
 display: flex;
 align-items: center;
 font-size: 13px;
 }
 
-.input-todo {
+.addmore-todo {
 background-color: #850000;
 color: #fff;
 padding: 9px 18px 10px 10px;
 }
 
-.input-todo > span {
+.addmore-todo > span {
 filter: blur(2px);
 }
 
-.input-plus {
+.addmore-plus {
 background-color: #DB0C0C;
 font-family: 'Risque';
 font-style: normal;

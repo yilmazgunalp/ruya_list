@@ -22,7 +22,7 @@ input[type="text"]:focus + hr.blip {
 animation: 1.5s infinite blip;
 }
 
-input {
+li > input {
 position: absolute;
 top: 22px;
 left: 0;
@@ -30,7 +30,8 @@ padding: 2px;
 border: none;
 width: 22px;
 height: 24px;
-font-size: 32px;
+font-size: 20px;
+text-transform: lowercase;
 text-align: center;
 caret-color: transparent !important;
 }

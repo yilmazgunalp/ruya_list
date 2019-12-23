@@ -8,7 +8,7 @@ import CrazeHeader from './crazeHeader.js'
 import ListItem from './listItem.js'
 import Addbutton from './addButton.js'
 import DotsBox from './dotsBox.js'
-import InputItem from './InputItem.js'
+import InputItem from './inputItem.js'
     //<ActionBox header="Welcome to Ruya's List" action={() => <Enter/>}/>
     //<Failure message={failmessage}/>
 const failmessage = 'The water cycle consists of three phenomena – evaporation, precipitation, and collection- which are the three phenomena that make up what is known as “the water cycle.” ... These clouds are formed by a phenomenon known as “evaporation,” which is the first of three phenomena that make up the water cycle...'

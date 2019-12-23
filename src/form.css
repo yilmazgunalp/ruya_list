@@ -1,0 +1,24 @@
+.the-form {
+width: 100%;
+height: 100%;
+background: #039F9F;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 31px;
+padding-bottom: 61px;
+}
+
+.the-list > .todo-list {
+margin-top: 19px;
+}
+
+
+.the-form > .add-button {
+margin-top: 108px;
+min-width: 250px;
+}
+
+.the-form > .craze-header {
+margin-bottom: 24px;
+}

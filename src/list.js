@@ -12,13 +12,24 @@ function List({}) {
   const {dispatch} = React.useContext(RuyaContext);
   
   const [pagination, paginate] = React.useState({showDots: false,index: null, maxElements: 0});
+  const [todos, updateTodos] = React.useState([]);
 let thelistdiv = React.createRef();
-  const todos = [];
 
-  for(let i = 0; i < 14;  i++) {
-    todos.push(<ListItem order={i+1} key={i+1} todo="something to do"/>)
-      
-  }
+  React.useEffect(() => {
+    console.log( 'inside')
+    fetch('http://localhost:5000/db')
+    .then(resp => {
+      console.log( resp)
+      if(resp.ok) {
+   console.log( resp)
+      resp.json().then(results => {
+        console.log( results.results)
+    updateTodos(results.results.map(todo => <ListItem order={todo.id} key={todo.id} todo={todo.todo}/>))
+      })
+    
+    }})
+    .catch(e => console.log(e))
+  },[]);
 
   React.useEffect(() => {
     const maxElements = (thelistdiv.current.clientHeight - 225)/52;

@@ -16,7 +16,7 @@ function Chiper({count,answer,onSuccessAction,name,blr}) {
 
   React.useEffect(() => {
     if(completed) {
-      let answerIsCorrect = answer === userAnswer.join('');
+      let answerIsCorrect = answer === userAnswer.join('').toLowerCase();
       if(answerIsCorrect ){
         onSuccessAction({type: "RESULT", successful: true, name })
       } else {
